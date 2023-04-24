@@ -36,7 +36,7 @@ app.post('/app/rps/play', (req, res) => {
 });
 
 app.get('*', (req, res) => {
-    res.status(404).send('404 Not Found');
+    res.status(404).send('404 NOT FOUND');
 });
 
 app.listen(port);
