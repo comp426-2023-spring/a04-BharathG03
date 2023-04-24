@@ -31,4 +31,8 @@ app.get('/app/rpsls/play', (req, res) => {
     res.status(200).send(rpsls(req.query.shot));
 });
 
+app.get('*', (req, res) => {
+    res.status(404).send('404 Not Found');
+});
+
 app.listen(port);
